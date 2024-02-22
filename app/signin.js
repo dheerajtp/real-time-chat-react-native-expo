@@ -16,7 +16,8 @@ import { Octicons } from "@expo/vector-icons";
 import { router } from "expo-router";
 import { useRef, useState } from "react";
 import user from "../services/user";
-import Loading from "../components/Loading";
+import Loading from "../components/common/Loading";
+import CustomKeyboardView from "../components/common/CustomKeyboardView";
 
 const Signin = () => {
   const emailRef = useRef(""),
@@ -34,7 +35,7 @@ const Signin = () => {
   };
 
   return (
-    <View className="flex-1">
+    <CustomKeyboardView>
       <StatusBar style="dark" />
       <View
         className="flex-1 gap-12"
@@ -123,7 +124,7 @@ const Signin = () => {
           </View>
         </View>
       </View>
-    </View>
+    </CustomKeyboardView>
   );
 };
 

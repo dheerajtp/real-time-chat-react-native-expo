@@ -5,7 +5,7 @@ const Loading = ({ size }) => {
   return (
     <View style={{ height: size, aspectRatio: 1 }}>
       <LottieView
-        source={require("../assets/loading.json")}
+        source={require("../../assets/loading.json")}
         style={{ width: "100%", height: "100%" }}
         autoPlay
         loop
